@@ -4,6 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.js' integrity='sha512-XOPlIlXpw0vpE0/VuN7EuYgr5RwYVWelPtVSIVXVnPrui7nG70Y/OLwcvh2UxkxprQem8iKYQuMKfw4qxZAung==' crossorigin='anonymous'></script>
    <title>Interior</title>
    <link rel="stylesheet" href="./style.css">
    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'
@@ -19,6 +21,7 @@
       crossorigin='anonymous'></script>
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -313,6 +316,370 @@
    </div>
 </div>
 
+<!--Our clients-->
+
+<div class="clients">
+   <div class="container">
+      <div class="clients-img">
+         <img src="../img/baner01.png" alt="baner01">
+      </div>
+      <div class="clients-text">
+         <div class="baner-text-small">
+            <div class="line-horizontal"></div>
+            <div class="text-small">WHAT PEOPLE SAY</div>
+            <div class="line-horizontal"></div>
+         </div>
+         <div class="baner-text-big">Words Of Our Clients</div>
+      </div>
+      <div class="clients-feedback">
+
+            <div class="feedback-cart">
+               <div class="photo-back">
+                  <img src="../img/client1.png" alt="photo-feedback">
+               </div>
+               <p class="name">Bessie Cooper</p>
+               <p class="position">Communications Director</p>
+               <div class="reits">
+                  <p class="star"><img src="../img/star.png" alt="star"></p>
+                  <p class="reits-num">4.0</p>
+               </div>
+               <div class="line"></div>
+               <div class="text">
+                  I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi
+               </div>
+            </div>
+
+            <div class="feedback-cart" id="feedbackCart">
+               <div class="photo-back">
+                  <img src="../img/client2.png" alt="photo-feedback">
+               </div>
+               <p class="name">Anjelina Jolie</p>
+               <p class="position">Sales Manager</p>
+               <div class="reits">
+                  <p class="star"><img src="../img/star.png" alt="star"></p>
+                  <p class="reits-num">4.0</p>
+               </div>
+               <div class="line"></div>
+               <div class="text">
+                  I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi
+               </div>
+            </div>
+         
+            <div class="feedback-cart">
+               <div class="photo-back">
+                  <img src="../img/client3.png" alt="photo-feedback">
+               </div>
+               <p class="name">Brooklyn Simmons</p>
+               <p class="position">Public Relations Specialist</p>
+               <div class="reits">
+                  <p class="star"><img src="../img/star.png" alt="star"></p>
+                  <p class="reits-num">4.0</p>
+               </div>
+               <div class="line"></div>
+               <div class="text">
+                  I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi
+               </div>
+            </div>
+
+            <div class="feedback-cart">
+               <div class="photo-back">
+                  <img src="../img/client4.png" alt="photo-feedback">
+               </div>
+               <p class="name">Bessie Cooper</p>
+               <p class="position">Communications Director</p>
+               <div class="reits">
+                  <p class="star"><img src="../img/star.png" alt="star"></p>
+                  <p class="reits-num">4.0</p>
+               </div>
+               <div class="line"></div>
+               <div class="text">
+                  I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi
+               </div>
+            </div>
+
+      </div>
+   </div>
+</div>
+
+
+<!--Popular product-->
+
+<div class="popular-product">
+   <div class="container">
+      <div class="popular-name">
+         <div class="line"></div>
+         <p class="name">POPULAR PRODUCT</p>
+      </div>
+      <div class="popular-product">
+         <p class="name-product">Top Special Product</p>
+         <button class="see-btn">See More Product</button>
+      </div>
+      <div class="goodsCarts">
+         <div class="cart">
+            <div class="product-images">
+               <img class="product-img" src="../img/products/cart1.png" alt="">
+            </div>
+            <div class="cartLine">
+               <div class="return"><i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i></div>
+               <div class="heart"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></div>
+               <div class="box"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="cartName">Blue chair</div>
+            <div class="cartPrices">
+               <div class="oldPrice">$20.00</div>
+               <div class="price">$15.00</div>
+               <div class="starts">
+                  <img src="../img/products/star.png" alt="star">
+               </div>
+            </div>
+         </div>
+
+         <div class="cart">
+            <div class="product-images">
+               <img class="product-img" src="../img/products/cart2.png" alt="">
+            </div>
+            <div class="cartLine">
+               <div class="return"><i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i></div>
+               <div class="heart"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></div>
+               <div class="box"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="cartName">Blue chair</div>
+            <div class="cartPrices">
+               <div class="oldPrice">$18.00</div>
+               <div class="price">$12.00</div>
+               <div class="starts">
+                  <img src="../img/products/star.png" alt="star">
+               </div>
+            </div>
+         </div>
+
+         <div class="cart">
+            <div class="product-images">
+               <img class="product-img" src="../img/products/cart3.png" alt="">
+            </div>
+            <div class="cartLine">
+               <div class="return"><i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i></div>
+               <div class="heart"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></div>
+               <div class="box"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="cartName">Coral vase</div>
+            <div class="cartPrices">
+               <div class="oldPrice">$20.00</div>
+               <div class="price">$15.00</div>
+               <div class="starts">
+                  <img src="../img/products/star.png" alt="star">
+               </div>
+            </div>
+         </div>
+
+         <div class="cart">
+            <div class="product-images">
+               <img class="product-img" src="../img/products/cart4.png" alt="">
+            </div>
+            <div class="cartLine">
+               <div class="return"><i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i></div>
+               <div class="heart"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></div>
+               <div class="box"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="cartName">Coffe table set</div>
+            <div class="cartPrices">
+               <div class="oldPrice">$20.00</div>
+               <div class="price">$15.00</div>
+               <div class="starts">
+                  <img src="../img/products/star.png" alt="star">
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+
+<!--Black line-->
+
+<div class="blackLine">
+   <div class="container">
+      <div class="blackLine-item">
+         <div class="black-photo">
+            <img src="../img/blackline1.png" alt="">
+         </div>
+         <div class="black-text">
+            <p class="text-big">Free Shipping</p>
+            <p class="text-small">Capped at $319 per order</p>
+         </div>
+         <div class="line-vertical"></div>
+         <div class="black-photo">
+            <img src="../img/blackline2.png" alt="">
+         </div>
+         <div class="black-text">
+            <p class="text-big">Free Returns</p>
+            <p class="text-small">Within 25 Days</p>
+         </div>
+         <div class="line-vertical"></div>
+         <div class="black-photo">
+            <img src="../img/blackline3.png" alt="">
+         </div>
+         <div class="black-text">
+            <p class="text-big">100% Secure</p>
+            <p class="text-small">100% Secure payment</p>
+         </div>
+         <div class="line-vertical"></div>
+         <div class="black-photo">
+            <img src="../img/blackline4.png" alt="">
+         </div>
+         <div class="black-text">
+            <p class="text-big">Best Price</p>
+            <p class="text-small">Guaranteed Gifts</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<!--Recent Articles-->
+
+<div class="recent">
+   <div class="container">
+      <div class="recent-info">
+         <div class="recent-text-small">
+            <p class="line-horizontal"></p>
+            <p class="text">RECENT ARTICLES</p>
+            <p class="line-horizontal"></p>
+         </div>
+         <div class="recent-text-big">
+            <p class="text">Read Our Latest Articles</p>
+         </div>
+      </div>
+
+      <div class="recent-carts">
+
+         <div class="recent-cart">
+            <div class="recent-img">
+               <img src="../img/recent1.png" alt="">
+            </div>
+            <div class="cart-date">
+               <p class="date-num">05</p>
+               <p class="month">May</p>
+               <p class="line-horizontal"></p>
+            </div>
+            <div class="recent-cart-info">
+               <div class="coments">
+                  <div class="name-coments">
+                     <img src="../img/user.png" alt="">
+                     <p class="text">John Doe</p>
+                  </div>
+                  <div class="coment">
+                     <img src="../img/coment.png" alt="">
+                     <p class="text">9 Comments</p>
+                  </div>
+               </div>
+               <div class="recent-cart-name">
+                  <p class="text">Things to Know When Choosing the Perfect Sofa</p>
+               </div>
+               <div class="recent-btn">
+                  <button>See More Product</button>
+               </div>
+            </div>
+         </div>
+   
+         <div class="recent-cart">
+            <div class="recent-img">
+               <img src="../img/recent2.png" alt="">
+            </div>
+            <div class="cart-date">
+               <p class="date-num">23</p>
+               <p class="month">Jun</p>
+               <p class="line-horizontal"></p>
+            </div>
+            <div class="recent-cart-info">
+               <div class="coments">
+                  <div class="name-coments">
+                     <img src="../img/user.png" alt="">
+                     <p class="text">John Doe</p>
+                  </div>
+                  <div class="coment">
+                     <img src="../img/coment.png" alt="">
+                     <p class="text">9 Comments</p>
+                  </div>
+               </div>
+               <div class="recent-cart-name">
+                  <p class="text">Things to Know When Choosing the Perfect Sofa</p>
+               </div>
+               <div class="recent-btn">
+                  <button>See More Product</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="recent-cart">
+            <div class="recent-img">
+               <img src="../img/recent3.png" alt="">
+            </div>
+            <div class="cart-date">
+               <p class="date-num">15</p>
+               <p class="month">May</p>
+               <p class="line-horizontal"></p>
+            </div>
+            <div class="recent-cart-info">
+               <div class="coments">
+                  <div class="name-coments">
+                     <img src="../img/user.png" alt="">
+                     <p class="text">John Doe</p>
+                  </div>
+                  <div class="coment">
+                     <img src="../img/coment.png" alt="">
+                     <p class="text">9 Comments</p>
+                  </div>
+               </div>
+               <div class="recent-cart-name">
+                  <p class="text">Things to Know When Choosing the Perfect Sofa</p>
+               </div>
+               <div class="recent-btn">
+                  <button>See More Product</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+</div>
+
+
+<!--Footer-->
+
+<div class="footer">
+   <div class="container">
+      <div class="footer-form">
+         <div class="footer-logo">
+            <img src="../img/logo.png" alt="">
+            <img src="../img/interior.png" alt="">
+         </div>
+         <p class="name-item">
+            Join Now For Early Access
+         </p>
+         <p class="name-items">
+            Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit
+         </p>
+         <div class="email-form">
+               <input type="text" id="email" placeholder="Enter your email address...">
+               <button id="send">SUBSCRIBE</button>
+         </div>
+      </div>
+      <div class="footer-inform">
+         <div class="copyright">Copyright 2022 - Designed & Developed by Frenify</div>
+         <div class="social-img">
+            <img src="../img/fb.png" alt="">
+            <img src="../img/inst.png" alt="">
+            <img src="../img/twitter.png" alt="">
+            <img src="../img/link.png" alt="">
+         </div>
+      </div>
+   </div>
+</div>
+
+<script src="./main.js"></script>
 
 </body>
 
