@@ -1,3 +1,4 @@
+const { log } = require('console');
 const express = require('express');
 const fs = require('fs');
 const app = express();
@@ -28,10 +29,30 @@ app.get('/contact', (req, res) => {
    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 }) 
 
+app.get('/leads', (req, res) => {
+   res.sendFile(path.join(__dirname, 'public', 'leads.html'));
+})
+
+app.get('/get-emails', (req, res) => {
+   fs.readFile('users.txt', 'utf8', (err, data) => {
+      if(err) {
+         console.log(err);
+      } else {
+         res.json(strToArr(data));
+      }
+   });
+});
+
+function strToArr(str) {
+   let res = str.split('\n');
+   res.pop();
+   return res;
+}
+
 app.post('/save-email', (req, res) =>{
    const {email} = req.body;
    console.log(email);
-   fs.appendFile('users.txt', `$(email)\n`, (err)=>{
+   fs.appendFile('users.txt', `${email}\n`, (err)=>{
       if (err) {
          console.log(err);         
       } else {

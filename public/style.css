@@ -1006,4 +1006,39 @@ ul, ul li {
    gap: 25px;
 }
 
+/*BLOCK Leads*/
+
+.wrap {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.wrap .container {
+   margin-top: 50px;
+   padding: 20px 40px 20px 40px;
+   width: 800px;
+   background-color: #fff3f3;
+}
+.wrap .container .wrap-items {
+   margin-top: 15px;
+} 
+.wrap .container .wrap-items .wrap-item {
+   width: 100%;
+   background-color: chocolate;
+   border-radius: 30px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.wrap .container .wrap-items .wrap-item .leadsContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #F7F7F7;
+   font-size: 16px;
+}
+
 

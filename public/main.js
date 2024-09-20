@@ -6,7 +6,8 @@ $('#send').click(function () {
    axios.post('http://localhost:3000/save-email', data)
 
    .then(res=>{
-      console.log(res.data);
+      alert('Thank you for subscribe.');
+      $('#email').val('');
       
    })
 })

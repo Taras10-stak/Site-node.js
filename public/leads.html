@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.js' integrity='sha512-XOPlIlXpw0vpE0/VuN7EuYgr5RwYVWelPtVSIVXVnPrui7nG70Y/OLwcvh2UxkxprQem8iKYQuMKfw4qxZAung==' crossorigin='anonymous'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js'
+      integrity='sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=='
+      crossorigin='anonymous'></script>
+</head>
+<body>
+   <div class="wrap">
+      <div class="container">
+         <div class="wrap-name">
+            <h1>Список всіх підписників</h1>
+         </div>
+         <div class="wrap-items">
+            <div class="wrap-item">
+               <div class="leadsContainer">
+                  
+               </div>
+            </div>
+         </div>
+         <div class="wrap-items">
+            <div class="wrap-item">
+               <div class="leadsContainer">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <script>
+
+      axios.get('http://localhost:3000/get-emails')
+      .then(res => {
+         res.data.forEach(email => {
+            $('.leadsContainer').append(`<div>${email}</div>`)
+         })
+      })
+
+   </script>
+</body>
+</html>
